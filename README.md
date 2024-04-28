@@ -17,6 +17,8 @@
 
 ## 2. Installation of Dependencies
 
+*To install all the following dependencies in a single command, run `npm install` or `yarn install` in the terminal.*
+
 - `npx expo install react-native-screens react-native-safe-area-context` : Install the necessary dependencies for React Navigation.
 - `npm install @react-navigation/native` : Install the core library for React Navigation.
 - `npm install @react-navigation/stack` : Install the stack navigator for React Navigation.
@@ -24,6 +26,7 @@
 - `npx expo install expo-linear-gradient` : Install the linear gradient package for Expo.
 - `npm install expo-auth-session` : Install the authentication session package for Expo.
 - `npx expo install @react-native-async-storage/async-storage` : Install the async storage package for React Native.
+- `npx expo install expo-crypto` : Install the crypto (SHA-256) package for Expo.
 
 ## 3. Features
 
