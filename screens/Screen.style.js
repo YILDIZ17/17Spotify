@@ -46,4 +46,66 @@ export const styleScreen = StyleSheet.create({
         textAlign: "center",
         flex: 1,
     },
+    HeadView: {
+        padding: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between"
+    },
+    accountImage: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        resizeMode: "cover"
+    },
+    welcomeMessage: {
+        marginLeft: 10,
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "white"
+    },
+    block: {
+        marginHorizontal: 12,
+        marginVertical: 5,
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10
+    },
+    categorieBlock: {
+        backgroundColor: "#282828",
+        padding: 10,
+        borderRadius: 30
+    },
+    categorieText: {
+        fontSize: 15,
+        color: "white"
+    },
+    blocView: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between"
+    },
+    pressableStyle: {
+        marginBottom: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10,
+        flex: 1,
+        marginHorizontal: 10,
+        marginVertical: 8,
+        backgroundColor: "#202020",
+        borderRadius: 4,
+        elevation: 3
+    },
+    blockStyle: {
+        width: 55,
+        height: 55,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    pressableText: {
+        color: "white",
+        fontSize: 13,
+        fontWeight: "bold",
+    }
 });
