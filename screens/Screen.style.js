@@ -107,5 +107,22 @@ export const styleScreen = StyleSheet.create({
         color: "white",
         fontSize: 13,
         fontWeight: "bold",
-    }
+    },
+    artistTextStyle: {
+        color: "white",
+        fontSize: 19,
+        fontWeight: "bold",
+        marginHorizontal: 10,
+        marginTop: 10,
+    },
+    pressableSearch2: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10,
+        backgroundColor: "#42275a",
+        padding: 9,
+        flex: 1,
+        borderRadius: 3,
+        height: 50
+    },
 });

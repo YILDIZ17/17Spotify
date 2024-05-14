@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import LoginScreen from "./screens/LoginScreen";
 import { styleApp } from "./App.style";
+import LikedSongsScreens from "./screens/LikedSongsScreens";
 
 const Tab = createBottomTabNavigator();
 
@@ -51,6 +52,7 @@ function navigation() {
             <Stack.Navigator>
                 <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="Main" component={BottomTabs} options={{ headerShown: false }} />
+                <Stack.Screen name="Liked" component={LikedSongsScreens} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

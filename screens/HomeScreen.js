@@ -1,13 +1,17 @@
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, Image, Pressable } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, Image, Pressable, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { styleScreen } from './Screen.style';
 import { LinearGradient } from 'expo-linear-gradient';
 import { height, resizeMode } from 'deprecated-react-native-prop-types/DeprecatedImagePropType';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import ArtistCard from '../components/ArtistCard';
+import RecentlyPlayedCard from '../components/RecentlyPlayedCard';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
   const [userProfile, setUserProfile] = useState();
+  const navigation = useNavigation();
   const greetingMessage = () => {
     const currentTime = new Date().getHours();
     if (currentTime < 12) {
@@ -48,7 +52,9 @@ const HomeScreen = () => {
         <View style={{ height: 10 }} />
 
         <View style={styleScreen.blocView}>
-          <Pressable style={styleScreen.pressableStyle}>
+          <Pressable 
+          onPress={() => navigation.navigate("Liked")}
+          style={styleScreen.pressableStyle}>
             <LinearGradient colors={["#33006F", "#FFFFFF"]}>
               <Pressable style={styleScreen.blockStyle}>
                 <AntDesign name="heart" size={24} color="white" />
@@ -63,6 +69,24 @@ const HomeScreen = () => {
             <Text style={styleScreen.pressableText}>HipHop</Text>
           </View>
         </View>
+        <Text style={styleScreen.artistTextStyle}>Vos artistes préférés</Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <ArtistCard />
+          <ArtistCard />
+          <ArtistCard />
+          <ArtistCard />
+        </ScrollView>
+
+        <View style={{ height: 20 }} />
+        <Text style={styleScreen.artistTextStyle}>
+          Récemment écouté
+        </Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <RecentlyPlayedCard />
+          <RecentlyPlayedCard />
+          <RecentlyPlayedCard />
+          <RecentlyPlayedCard />
+        </ScrollView>
       </ScrollView>
     </LinearGradient>
   )
