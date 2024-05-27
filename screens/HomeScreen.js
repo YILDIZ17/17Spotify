@@ -15,13 +15,13 @@ const HomeScreen = () => {
   const greetingMessage = () => {
     const currentTime = new Date().getHours();
     if (currentTime < 12) {
-      return "Good Morning";
+      return "Bon matin";
     }
     else if (currentTime < 16) {
-      return "Good Afternoon";
+      return "Bon après-midi";
     }
     else {
-      return "Good Evening";
+      return "Bonsoir";
     }
   }
   const message = greetingMessage();

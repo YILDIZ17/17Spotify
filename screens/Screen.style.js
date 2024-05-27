@@ -115,6 +115,13 @@ export const styleScreen = StyleSheet.create({
         marginHorizontal: 10,
         marginTop: 10,
     },
+    pressableSearchBase: {
+        marginHorizontal: 10,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginTop: 9,
+    },
     pressableSearch2: {
         flexDirection: "row",
         alignItems: "center",
@@ -124,5 +131,40 @@ export const styleScreen = StyleSheet.create({
         flex: 1,
         borderRadius: 3,
         height: 50
+    },
+    pressableSearch3: {
+        marginHorizontal: 10,
+        backgroundColor: "#42275a",
+        padding: 10,
+        borderRadius: 3,
+        height: 38,
+    },
+    pressableSong: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginHorizontal: 10,
+    },
+    arrowSong: {
+        width: 30,
+        height: 30,
+        borderRadius: 15,
+        backgroundColor: "#1DB954",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    arrowSong2: {
+        width: 70,
+        height: 70,
+        borderRadius: 35,
+        backgroundColor: "#1DB954",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 10,
+    },
+    arrowSong3: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10,
     },
 });
